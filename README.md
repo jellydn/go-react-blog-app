@@ -15,7 +15,12 @@ yarn install
 ## Usage
 
 ```sh
-yarn dev
+# Run web app
+yarn web
+# Run api
+yarn api
+# Run go generate
+cd packages/orm && go generate ./...
 ```
 
 ## Built with

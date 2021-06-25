@@ -23,7 +23,8 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   },
   "scripts": {
-    "dev": "lerna run dev --stream",
+    "web": "cd packages/web && yarn dev",
+    "api": "cd packages/api && go run .",
     "prepare": "husky install"
   }
 }

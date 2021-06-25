@@ -1,0 +1,16 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "BLog API collections",
+        "title": "Golang Blog API",
+        "contact": {
+            "name": "Dung Huynh",
+            "url": "http://productsway.com",
+            "email": "dung@productsway.com"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:1323",
+    "basePath": "/",
+    "paths": {}
+}
