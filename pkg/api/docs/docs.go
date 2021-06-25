@@ -46,7 +46,7 @@ var SwaggerInfo = swaggerInfo{
 	BasePath:    "/",
 	Schemes:     []string{},
 	Title:       "Golang Blog API",
-	Description: "BLog API collections",
+	Description: "Blog API collections",
 }
 
 type s struct{}

@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "BLog API collections",
+        "description": "Blog API collections",
         "title": "Golang Blog API",
         "contact": {
             "name": "Dung Huynh",

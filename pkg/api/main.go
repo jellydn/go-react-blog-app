@@ -10,11 +10,10 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
+	_ "github.com/jellydn/go-react-blog-app/pkg/api/docs"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/swaggo/echo-swagger"
-
-	_ "github.com/jellydn/go-react-blog-app/packages/api/docs"
 )
 
 type (
@@ -101,7 +100,7 @@ func profile(c echo.Context) error {
 
 // @title Golang Blog API
 // @version 1.0
-// @description BLog API collections
+// @description Blog API collections
 
 // @contact.name Dung Huynh
 // @contact.url http://productsway.com
@@ -122,9 +121,6 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Use(middleware.Secure())
-	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
-		Level: 5,
-	}))
 	e.Use(middleware.CORS())
 
 	//-------------------

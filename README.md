@@ -20,8 +20,12 @@ yarn web
 # Run api
 yarn api
 # Run go generate
-cd packages/orm && go generate ./...
+cd pkg/orm && go generate ./...
 ```
+
+## Swagger UI
+
+Run `yarn api` then open http://localhost:1323/swagger/index.html
 
 ## Built with
 
@@ -32,7 +36,7 @@ cd packages/orm && go generate ./...
 ## Database migration
 
 ```sh
-cd packages/blog
+cd pkg/blog
 # sync the database with your schema
 go run github.com/prisma/prisma-client-go db push
 ```

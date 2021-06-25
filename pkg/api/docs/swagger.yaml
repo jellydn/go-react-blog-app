@@ -5,7 +5,7 @@ info:
     email: dung@productsway.com
     name: Dung Huynh
     url: http://productsway.com
-  description: BLog API collections
+  description: Blog API collections
   title: Golang Blog API
   version: "1.0"
 paths: {}
