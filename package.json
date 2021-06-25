@@ -1,7 +1,29 @@
 {
   "name": "root",
   "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/web"
+    ]
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "husky": ">=6",
+    "lerna": "^4.0.0",
+    "lint-staged": ">=10",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  },
+  "scripts": {
+    "dev": "lerna run dev --stream",
+    "prepare": "husky install"
   }
 }

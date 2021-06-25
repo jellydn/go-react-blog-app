@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"log"
 
-	"blog/db"
+	"orm/db"
 )
 
 func main() {

@@ -15,7 +15,7 @@ yarn install
 ## Usage
 
 ```sh
-go generate ./...
+yarn dev
 ```
 
 ## Built with
