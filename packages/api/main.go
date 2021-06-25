@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	_ "github.com/jellydn/go-react-blog-app/pkg/api/docs"
+	_ "github.com/jellydn/go-react-blog-app/packages/api/docs"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/swaggo/echo-swagger"

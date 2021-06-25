@@ -1,4 +1,4 @@
-module github.com/jellydn/go-react-blog-app/pkg/api
+module github.com/jellydn/go-react-blog-app/packages/api
 
 go 1.16
 

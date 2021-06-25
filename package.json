@@ -6,7 +6,7 @@
   },
   "workspaces": {
     "packages": [
-      "pkg/web"
+      "packages/web"
     ]
   },
   "devDependencies": {
@@ -23,8 +23,8 @@
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   },
   "scripts": {
-    "web": "cd pkg/web && yarn dev",
-    "api": "cd pkg/api && go run .",
+    "web": "cd packages/web && yarn dev",
+    "api": "cd packages/api && go run .",
     "prepare": "husky install"
   }
 }
