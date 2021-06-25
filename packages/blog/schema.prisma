@@ -16,6 +16,7 @@ model Post {
         published Boolean
         desc      String?
         comments  Comment[]
+        tags      Tag[]
 }
 
 model Comment {
@@ -25,4 +26,11 @@ model Comment {
 
         post   Post   @relation(fields: [postID], references: [id])
         postID String
+}
+
+model Tag {
+        id        String   @id @default(cuid())
+        createdAt DateTime @default(now())
+        name      String
+        posts     Post[]
 }
