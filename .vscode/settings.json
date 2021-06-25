@@ -1,0 +1,10 @@
+{
+	"sqltools.connections": [
+		{
+			"previewLimit": 50,
+			"driver": "SQLite",
+			"name": "blog",
+			"database": "${workspaceFolder:go-react-blog-app}/packages/blog/dev.db"
+		}
+	]
+}
