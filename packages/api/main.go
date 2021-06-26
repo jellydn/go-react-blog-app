@@ -11,6 +11,7 @@ import (
 	"go-react-blog-app/packages/api/handlers"
 	"go-react-blog-app/packages/api/middlewares"
 
+	"github.com/go-playground/validator"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	echoSwagger "github.com/swaggo/echo-swagger"
@@ -50,6 +51,9 @@ func main() {
 
 	// Server header
 	e.Use(middlewares.ServerHeader)
+
+	// Validator
+	e.Validator = &CustomValidator{validator: validator.New()}
 
 	// Handler
 	e.GET("/swagger/*", echoSwagger.WrapHandler)

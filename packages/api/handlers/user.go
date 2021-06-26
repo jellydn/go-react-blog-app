@@ -8,12 +8,24 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func Login(c echo.Context) error {
-	username := c.FormValue("username")
-	password := c.FormValue("password")
+type User struct {
+	Username string `json:"username" validate:"required"`
+	Password string `json:"password" validate:"required"`
+}
+
+func Login(c echo.Context) (err error) {
+	user := new(User)
+
+	if err = c.Bind(user); err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	if err = c.Validate(user); err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
 
 	// Throws unauthorized error
-	if username != "admin" || password != "admin" {
+	if user.Username != "admin" || user.Password != "password" {
 		return echo.ErrUnauthorized
 	}
 
