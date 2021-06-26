@@ -72,8 +72,7 @@ func main() {
 	e.GET("/blog", handlers.PostList)
 
 	r := e.Group("/me")
-	// TODO: move secret key to .env file
-	r.Use(middleware.JWT([]byte("secret123#@!")))
+	r.Use(middleware.JWT([]byte(os.Getenv("JWT_SECRET"))))
 	r.GET("", handlers.Profile)
 
 	// Start server
