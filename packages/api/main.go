@@ -65,6 +65,9 @@ func main() {
 	// Login route
 	e.POST("/login", handlers.Login)
 
+	// Post routes
+	e.GET("/blog", handlers.PostList)
+
 	r := e.Group("/me")
 	// TODO: move secret key to .env file
 	r.Use(middleware.JWT([]byte("secret123#@!")))
