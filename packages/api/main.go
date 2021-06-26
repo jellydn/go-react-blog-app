@@ -12,6 +12,7 @@ import (
 	"go-react-blog-app/packages/api/middlewares"
 
 	"github.com/go-playground/validator"
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	echoSwagger "github.com/swaggo/echo-swagger"
@@ -28,6 +29,8 @@ import (
 // @host localhost:1323
 // @BasePath /
 func main() {
+	godotenv.Load()
+
 	e := echo.New()
 
 	// Debug mode
