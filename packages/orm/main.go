@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"log"
 
-	"orm/db"
+	"go-react-blog-app/packages/orm/db"
 )
 
 func main() {
