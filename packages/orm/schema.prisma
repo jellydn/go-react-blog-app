@@ -10,6 +10,7 @@ generator db {
 
 model Post {
         id        String    @id @default(cuid())
+        authorId  User      @relation(fields: [userId], references: [id])
         createdAt DateTime  @default(now())
         updatedAt DateTime  @updatedAt
         title     String
@@ -17,6 +18,7 @@ model Post {
         desc      String?
         comments  Comment[]
         tags      Tag[]
+        userId    String
 }
 
 model Comment {
@@ -33,4 +35,14 @@ model Tag {
         createdAt DateTime @default(now())
         name      String
         posts     Post[]
+}
+
+model User {
+        id        String   @id @default(cuid())
+        createdAt DateTime @default(now())
+        updatedAt DateTime @updatedAt
+        username  String?
+        password  String
+        email     String
+        Post      Post[]
 }

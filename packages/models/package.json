@@ -1,6 +1,6 @@
 {
   "name": "models",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Huynh Duc Dung",
   "license": "MIT",
   "source": "src/index.ts",
@@ -10,6 +10,7 @@
   "unpkg": "./dist/models.umd.js",
   "scripts": {
     "build": "microbundle",
+    "prepare": "rimraf dist && microbundle",
     "dev": "microbundle watch"
   },
   "devDependencies": {

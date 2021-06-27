@@ -13,6 +13,15 @@ export interface CommentModel {
   postID: string;
   post?: PostModel;
 }
+export interface UserModel {
+  id: string;
+  createdAt: Time;
+  updatedAt: Time;
+  username?: string;
+  password: string;
+  email: string;
+  Post: PostModel[];
+}
 export interface Time {}
 export interface PostModel {
   id: string;
@@ -21,6 +30,8 @@ export interface PostModel {
   title: string;
   published: boolean;
   desc?: string;
+  userId: string;
+  authorId?: UserModel;
   comments: CommentModel[];
   tags: TagModel[];
 }
