@@ -6,7 +6,8 @@
   },
   "workspaces": {
     "packages": [
-      "packages/web"
+      "packages/web",
+      "packages/models"
     ]
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "lerna": "^4.0.0",
     "lint-staged": ">=10",
     "prettier": "^2.3.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.4"
   },
   "lint-staged": {
@@ -25,6 +27,7 @@
   "scripts": {
     "web": "cd packages/web && yarn dev",
     "api": "cd packages/api && go run .",
-    "prepare": "husky install"
+    "postinstall": "husky install",
+    "prepare": "lerna run prepare --stream"
   }
 }
