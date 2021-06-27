@@ -43,6 +43,6 @@ model User {
         updatedAt DateTime @updatedAt
         username  String?
         password  String
-        email     String
+        email     String   @unique
         Post      Post[]
 }

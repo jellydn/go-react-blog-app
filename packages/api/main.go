@@ -65,8 +65,9 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 
-	// Login route
+	// User routes
 	e.POST("/login", handlers.Login)
+	e.POST("/register", handlers.Register)
 
 	// Post routes
 	e.GET("/blog", handlers.PostList)
