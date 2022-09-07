@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "go-react-blog-app",
   "private": true,
   "engines": {
     "node": ">=14"
@@ -11,14 +11,15 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
-    "husky": ">=6",
-    "lerna": "^4.0.0",
-    "lint-staged": ">=10",
-    "prettier": "^2.3.1",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "husky": ">=8.0.1",
+    "lerna": "^5.5.0",
+    "lint-staged": ">=13.0.3",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.3.4"
+    "turbo": "^1.4.5",
+    "typescript": "^4.8.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
@@ -28,6 +29,8 @@
     "web": "cd packages/web && yarn dev",
     "api": "cd packages/api && go run .",
     "postinstall": "husky install",
-    "prepare": "lerna run prepare --stream"
+    "dev": "turbo run dev --parallel --no-cache",
+    "test": "turbo run test",
+    "build": "turbo run build"
   }
 }
