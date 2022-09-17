@@ -14,6 +14,6 @@
     "dev": "microbundle watch"
   },
   "devDependencies": {
-    "microbundle": "^0.15.1"
+    "microbundle": "0.15.1"
   }
 }
