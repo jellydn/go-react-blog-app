@@ -7,26 +7,26 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@hookform/devtools": "4.2.2",
-    "@hookform/error-message": "2.0.0",
+    "@hookform/devtools": "4.2.3",
+    "@hookform/error-message": "2.0.1",
     "@reach/router": "1.3.4",
-    "jotai": "1.8.3",
-    "loglevel": "1.8.0",
+    "jotai": "1.9.1",
+    "loglevel": "1.8.1",
     "models": "file:..",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.35.0"
+    "react-hook-form": "7.39.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.3",
-    "@types/reach__router": "1.3.10",
-    "@types/react": "18.0.20",
-    "@types/react-dom": "18.0.6",
+    "@types/reach__router": "1.3.11",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.8",
     "@vitejs/plugin-react-refresh": "1.3.6",
-    "autoprefixer": "10.4.11",
-    "postcss": "8.4.16",
-    "tailwindcss": "3.1.8",
-    "typescript": "4.8.3",
-    "vite": "3.1.2"
+    "autoprefixer": "10.4.13",
+    "postcss": "8.4.18",
+    "tailwindcss": "3.2.3",
+    "typescript": "4.8.4",
+    "vite": "3.2.3"
   }
 }
