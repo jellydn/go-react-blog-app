@@ -1151,10 +1151,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@hookform/devtools@4.2.3":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.2.3.tgz#6e4495f64f980c66052b18b623990fdbd0d6dd30"
-  integrity sha512-lC1OeFDvB5XFNS/felSi6MuOz9ya2ggOFU/PwOCfYZ0Puhm7VOPsD648ZfbO2dCmHPOZkRwPjv31WRIIhT0A2g==
+"@hookform/devtools@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.3.0.tgz#2f4a71e9376d37c3fc7a3e8f1e7b6f30e69a496d"
+  integrity sha512-DTTTYJ9j+L4Nd/qj0k41WNbRF/qNQfZxbHwUupFeQWu6JOJ5Ak5ksxuoCbfSWrsXV5EPSmcfhpsDos0IOlwhsg==
   dependencies:
     "@emotion/react" "^11.1.5"
     "@emotion/styled" "^11.3.0"
