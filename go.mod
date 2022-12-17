@@ -1,6 +1,6 @@
 module go-react-blog-app
 
-go 1.19
+go 1.19.4
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
