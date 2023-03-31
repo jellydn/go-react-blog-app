@@ -11,15 +11,15 @@
     ]
   },
   "devDependencies": {
-    "eslint": "8.31.0",
+    "eslint": "8.37.0",
     "eslint-config-airbnb-typescript-prettier": "5.0.0",
-    "husky": "8.0.2",
-    "lerna": "6.3.0",
-    "lint-staged": "13.1.0",
-    "prettier": "2.8.1",
+    "husky": "8.0.3",
+    "lerna": "6.6.1",
+    "lint-staged": "13.2.0",
+    "prettier": "2.8.7",
     "rimraf": "4.4.1",
-    "turbo": "1.6.3",
-    "typescript": "5.0.2"
+    "turbo": "1.8.8",
+    "typescript": "5.0.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
