@@ -10,12 +10,12 @@
     "@hookform/devtools": "4.3.1",
     "@hookform/error-message": "2.0.1",
     "@reach/router": "1.3.4",
-    "jotai": "2.2.0",
+    "jotai": "2.2.1",
     "loglevel": "1.8.1",
     "models": "file:..",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.44.3"
+    "react-hook-form": "7.45.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.3",
