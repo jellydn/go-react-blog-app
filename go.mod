@@ -10,11 +10,11 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator v9.31.0+incompatible // indirect
-	github.com/iancoleman/strcase v0.2.0
+	github.com/iancoleman/strcase v0.3.0
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/labstack/echo/v4 v4.3.0 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
-	github.com/prisma/prisma-client-go v0.18.0
+	github.com/prisma/prisma-client-go v0.35.0
 	github.com/shopspring/decimal v1.3.1
 	github.com/spf13/viper v1.8.1 // indirect
 	github.com/swaggo/echo-swagger v1.1.0 // indirect
