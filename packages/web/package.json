@@ -10,7 +10,7 @@
     "@hookform/devtools": "4.3.1",
     "@hookform/error-message": "2.0.1",
     "@reach/router": "1.3.4",
-    "jotai": "2.7.1",
+    "jotai": "2.7.2",
     "loglevel": "1.9.1",
     "models": "file:..",
     "react": "18.2.0",
@@ -27,6 +27,6 @@
     "postcss": "8.4.38",
     "tailwindcss": "3.4.3",
     "typescript": "5.4.3",
-    "vite": "5.2.6"
+    "vite": "5.2.7"
   }
 }
