@@ -14,8 +14,8 @@ require (
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/labstack/echo/v4 v4.3.0 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
-	github.com/prisma/prisma-client-go v0.35.0
-	github.com/shopspring/decimal v1.3.1
+	github.com/prisma/prisma-client-go v0.47.0
+	github.com/shopspring/decimal v1.4.0
 	github.com/spf13/viper v1.8.1 // indirect
 	github.com/swaggo/echo-swagger v1.1.0 // indirect
 	github.com/swaggo/swag v1.7.0 // indirect
