@@ -19,7 +19,7 @@
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
     "turbo": "1.13.2",
-    "typescript": "5.4.3"
+    "typescript": "7.0.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
